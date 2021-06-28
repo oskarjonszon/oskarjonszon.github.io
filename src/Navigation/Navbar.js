@@ -9,6 +9,7 @@ class Navbar extends Component
     return (
       <nav className='nav'>
         <NavLink to='/'> Home </NavLink>
+        <NavLink to='/projects'> Projects </NavLink>
         <NavLink to='/about'> About </NavLink>
       </nav>
     );

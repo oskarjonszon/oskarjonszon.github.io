@@ -8,7 +8,6 @@ class Footer extends Component
     return (
       <footer className='footer'>
         <h2> oskarjonszon </h2>
-        <p> .........  </p>
       </footer>
     );
   }

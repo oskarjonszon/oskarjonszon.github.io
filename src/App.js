@@ -5,6 +5,8 @@ import Home from './Home/Home';
 import Navbar from './Navigation/Navbar'
 import Footer from './Footer/Footer'
 import About from './About/About'
+import Projects from './Projects/Projects'
+import Connect_4 from './Projects/Connect_4/Connect_4'
 
 
 class App extends Component
@@ -19,6 +21,8 @@ class App extends Component
               <Navbar />
               <Switch>
                 <Route path='/about' component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/connect_4" component={Connect_4} />
                 <Route path="/*" component={Home} />
               </Switch>
 

@@ -13,10 +13,20 @@
 
 .home h1 {
     font-size: 36pt;
+    color : black;
+    z-index: 1;
 }
 
 canvas {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    .home h1 {
+          color: white;
+     }
+
 }

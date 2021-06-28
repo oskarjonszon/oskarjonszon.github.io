@@ -113,17 +113,26 @@ class Canvas extends Component
     let context = canvas.getContext('2d');
     let particles = this.state.particles;
 
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    // Create gradient
+    var grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+    grd.addColorStop(0, "#fc7b03");
+    grd.addColorStop(1, "#fcba03");
+
+    // Fill with gradient
+    context.fillStyle = grd;
+
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
     particles.forEach(particle => 
     {
       context.beginPath();
+      context.fillStyle = "#ffe396";
       context.arc(particle.x, particle.y, particle.size, 0, 2 * Math.PI);
       context.fill();
 
       particle.attached.forEach(other => 
         {
-          context.strokeStyle = "rgba(0, 0, 0, 0.3)";
+          context.strokeStyle = "#ffe396";
           context.beginPath();
           context.moveTo(particle.x, particle.y);
           context.lineTo(other.x, other.y);
