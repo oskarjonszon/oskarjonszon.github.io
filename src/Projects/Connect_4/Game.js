@@ -18,11 +18,7 @@ class Game extends Component
 
     componentDidMount() 
     {
-        let canvas = this.ref.current;
-        this.resizeCanvas();
-        this.interval = setInterval(() => this.update(), 1000/60);
-        this.initParticles(100 , canvas);
-        window.addEventListener('resize', this.resizeCanvas());
+        
     }
 
     prepareField()
