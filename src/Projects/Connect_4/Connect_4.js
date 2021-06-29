@@ -20,6 +20,7 @@ class Connect_4 extends Component
     return (
         <div>
             <h1> Connect 4</h1>
+            <game />
         </div>
     );
   }
