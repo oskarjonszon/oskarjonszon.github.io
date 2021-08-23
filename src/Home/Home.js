@@ -8,8 +8,17 @@ class Home extends Component
   {
     return (
       <div className='home'>
-          <h1> Welcome </h1>
-          <Canvas />
+        <div className='intro'>
+          <h2> Hi, </h2>
+          <h1> I'm <span className='fat'>Oskar Jönsson</span>. </h1>
+        </div>
+        <div className='links'>
+          <a href="#" className="icon github"></a>
+          <a href="#" className="icon linked-in"></a>
+          <a href="#" className="icon cv"></a>
+          <a href="#" className="icon contact"></a>
+        </div>
+
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Connect_4.css';
+import Game from './Game'
 
 class Connect_4 extends Component
 {
@@ -19,8 +20,10 @@ class Connect_4 extends Component
   {
     return (
         <div>
-            <h1> Connect 4</h1>
-            <game />
+            <h1> Connect 4 </h1>
+            <div className="board">
+              <Game/>
+            </div>
         </div>
     );
   }

@@ -16,21 +16,17 @@ class App extends Component
     return (
       <div className='content'>
         <div className='content-wrap'>
-        
           <HashRouter>
-              <Navbar />
+            <Navbar/>
               <Switch>
                 <Route path='/about' component={About} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/connect_4" component={Connect_4} />
                 <Route path="/*" component={Home} />
               </Switch>
-
-
           </HashRouter>
-        
+          
         </div>
-        <Footer />
       </div>
     );
   }

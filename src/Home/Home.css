@@ -11,22 +11,54 @@
     align-items: center;
 }
 
-.home h1 {
-    font-size: 36pt;
+.intro h1 {
+    font-size: 32pt;
     color : black;
-    z-index: 1;
+    font-weight: 700;
 }
 
-canvas {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.intro h2 {
+    font-size: 32pt;
+    color : black;
+    font-weight: 700;
 }
 
-@media (max-width: 1000px) {
+.fat {
+    font-weight: 900;
+    color: black;
+}
 
-    .home h1 {
-          color: white;
-     }
 
+.links {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}
+
+.github {
+    background-color: teal;
+}
+
+.linked-in {
+    background-image: url('/linked-in.png');
+}
+
+.cv {
+    background-color: saddlebrown;
+}
+
+.contact {
+    background-color: gainsboro;
 }

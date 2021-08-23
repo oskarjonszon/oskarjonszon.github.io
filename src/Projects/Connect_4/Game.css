@@ -1,0 +1,60 @@
+
+.board {
+    margin: auto;
+    width: 75%;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.controls .button{
+    margin: 10px;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.controls .button-start{
+    background-color: green;
+}
+
+.controls .button-restart{
+    background-color: green;
+}
+
+
+.grid {
+    margin: auto;   
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(7, fit-content(100%));
+    grid-template-rows: repeat(6, fit-content(100%));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.grid-area {
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    outline: 1px solid;
+}
+
+.grid-area-player {
+    background-color: blue;
+}
+
+.grid-area-empty {
+    background-color: grey;
+}
+
+.grid-area-bot {
+    background-color: red;
+}
